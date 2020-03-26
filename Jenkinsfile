@@ -19,7 +19,7 @@ pipeline {
      
        echo 'Deploying...'
        
-       sourceanalyzer -b sample msbuild hello-world /maxcpucount:1
+       sourceanalyzer -b sample *.js
        
        sourceanalyzer -b sample -scan -f result.fpr
        
