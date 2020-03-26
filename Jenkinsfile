@@ -18,6 +18,7 @@ pipeline {
      
      
        echo 'Deploying...'
+       sh"chmod +777 rules.sh"
        
       sh "./rules.sh && cat sample-scan.log"
        
